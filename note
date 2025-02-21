@@ -1,1 +1,5 @@
 eqx.partition(A,B)
+jax.lax.scan
+jax.
+pytree
+jax.vmap
