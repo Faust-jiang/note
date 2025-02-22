@@ -1,7 +1,12 @@
 eqx.partition(A,B)
 jax.lax.scan(function, init_state, array) #iterate over the sequence "array" through "function" meanwhile keeping track of intermediate state
-jax.
-pytree
+
+
+pytrees are nested collections of tuples, lists or dicts, you can think of them as generalized tuples in JAX which contain arrays or scalars or functions.-- 
+--those are called leaves.  Equinox represents neural network models as pytree
 jax.vmap
 numpyro is a probablistic programming library 
-np.stack: join a sequence along a new axis
+np.stack(list of arrays or in brackets like (a,b,c), axis=)       #join a sequence along a new axis
+
+@jax.jit
+@jax.grad
