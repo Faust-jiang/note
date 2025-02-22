@@ -1,5 +1,7 @@
 eqx.partition(A,B)
-jax.lax.scan
+jax.lax.scan(function, init_state, array) #iterate over the sequence "array" through "function" meanwhile keeping track of intermediate state
 jax.
 pytree
 jax.vmap
+numpyro is a probablistic programming library 
+np.stack: join a sequence along a new axis
