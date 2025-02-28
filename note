@@ -10,3 +10,5 @@ np.stack(list of arrays or in brackets like (a,b,c), axis=)       #join a sequen
 
 @jax.jit
 @jax.grad
+
+today's task: comprehend the function siganture, tensorlayernorm, dropout
