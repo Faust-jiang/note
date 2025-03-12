@@ -11,4 +11,14 @@ np.stack(list of arrays or in brackets like (a,b,c), axis=)       #join a sequen
 @jax.jit
 @jax.grad
 
-today's task: comprehend the function siganture, tensorlayernorm, dropout
+today's task: comprehend the function siganture, tensorlayernorm, dropout 
+signature and dropout understood, nn.Layernorm still unclear
+
+"`LayerNorm(shape)(x)` must satisfy the invariant `shape == x.shape`"
+    136         f"Received `shape={self.shape} and `x.shape={x.shape}`. You might need "
+    137         "to replace `layer_norm(x)` with `jax.vmap(layer_norm)(x)`.\n"
+    138         "\n"
+    139         "If this is a new error for you, it might be because this became "
+    140         "stricter in Equinox v0.11.0. Previously all that was required is that "
+    141         "`x.shape` ended with `shape`. However, this turned out to be a "
+    142         "frequent source of bugs, so we made the check stricter!"
